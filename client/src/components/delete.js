@@ -36,7 +36,7 @@ class Delete extends Component {
         return (<div>
            <p>welcome to delete weather component</p>
            <form>
-<input type ="text" value ={this.state.id} placeholder ="enter Id"
+<input type ="text" value ={this.state.id} placeholder ="enter city"
 onChange ={this.handleIdChange}/> 
 <input type ="submit" value = 'delete' onClick={this.handleSubmit}/>
            </form>

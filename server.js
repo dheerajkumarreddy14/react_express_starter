@@ -34,7 +34,7 @@ const weather = mongoose.model('weathers', weatherSchema);
        })
   })
   
-  //---------GET USER BY ID---------
+  //---------GET USER BY NAME---------
   app.get('/weathers/:id', function(req, res) {
     weather.findById(req.params.id).then(function(c) {
      res.send(c);

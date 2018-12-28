@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Router>
         <div className = "container">
-        <nav className = "navbar navbar-expand-lg navbar-light bg-light">
-         <Link to='/'className="navbar-brand">WEATHER REPORT BROUGHT YOU BY GOOGLE</Link>
+        <nav className = "navbar navbar-expand-lg navbar-dark bg-dark">
+         <Link to='/'className="navbar-brand">TRANSIN WEATHER REPORT</Link>
           <div className>
             <ul className = 'navbar-nav mr-auto'>
               <li className="navbar-item">
@@ -36,7 +36,7 @@ class App extends Component {
           </div>
         </nav>
       <Route path = '/' exact component ={GetWeather}/>
-      <Route path = '/edit/:id' component ={Edit}/>
+      <Route path = '/edit/' component ={Edit}/>
       <Route path = '/create' component ={Create}/>
       <Route path = '/delete/:id' component ={Delete}/>
       <Route path = '/getBy/:id' component ={GetById}/>

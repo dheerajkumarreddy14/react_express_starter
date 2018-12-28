@@ -22,7 +22,7 @@ this.setState({weatherid:e.target.value});
             "temperature":this.state.temperature,
             "weatherid":this.state.weatherid
         };
-        fetch('http://localhost:5000/weathers/' + this.state.city, {
+        fetch('http://localhost:5000/weathers/' + this.state.weatherid, {
         method: 'GET',
          headers: {
            'Accept':'application/json',
@@ -40,7 +40,7 @@ this.setState({weatherid:e.target.value});
            <form>
 <input type ="text" value ={this.state.id} placeholder ="enter Id"
 onChange ={this.handleChange}/> 
-<input type ="submit" value = 'getcitytemp' onClick={this.handleSearchById}/>
+<input type ="submit" onClick={this.handleSearchById}/>
            </form>
            <div>{this.state.searchdata.city}{this.state.searchdata.temperature}</div>
         </div>  );

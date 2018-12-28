@@ -51,6 +51,7 @@ class Create extends Component {
           }
         
     
+
     render() { 
         return (<div>
            <p>welcome to create weather component</p> 
@@ -60,7 +61,7 @@ class Create extends Component {
 onChange ={this.handleCityChange}/>
 <input type ="text" value ={this.state.temperature}
 onChange ={this.handleTempChange}/>
-<input type ="submit" value = 'post' onClick={this.handleSubmit}/>
+<input type ="submit" value = 'ADD' onClick={this.handleSubmit}/>
            </form>
         </div> );
     }
